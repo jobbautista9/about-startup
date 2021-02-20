@@ -1,7 +1,15 @@
 const Cc = Components.classes;
 const Ci = Components.interfaces;
+const Cm = Components.manager;
 
-Components.utils.import('resource://aboutstartup/startupdata.jsm');
+Cm.QueryInterface(Ci.nsIComponentRegistrar);
+
+const nsIAppStartup = Ci.nsIAppStartup_MOZILLA_2_0 || Ci.nsIAppStartup;
+
+Components.utils.import('resource://gre/modules/XPCOMUtils.jsm');
+Components.utils.import('resource://gre/modules/Services.jsm');
+
+Components.utils.import('chrome://aboutstartup/content/startupdata.jsm');
 
 function init() {
   var table = document.getElementById('table');

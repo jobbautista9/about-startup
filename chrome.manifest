@@ -1,0 +1,7 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+content         aboutstartup                     content/
+component       {ef5c36bf-8559-4449-8133-03e30e83c708}                  components/aboutStartup.js
+contract        @mozilla.org/network/protocol/about;1?what=startup       {ef5c36bf-8559-4449-8133-03e30e83c708}
